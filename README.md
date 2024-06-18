@@ -1,1 +1,3 @@
-`chezmoi init --apply diogohrq`
+```
+chezmoi init --apply diogohrq
+```
