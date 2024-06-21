@@ -1,0 +1,20 @@
+[
+  {
+    "context": "Editor && (vim_mode == normal)",
+    "bindings": {
+      "space w": "workspace::Save",
+      "ctrl-u": "editor::Undo",
+      "space f f": "file_finder::Toggle",
+      "space m": "workspace::ToggleLeftDock",
+      "ctrl-q": "pane::GoBack",
+      "ctrl-e": "pane::GoForward",
+      "space c": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == visual || vim_mode == visual-line)",
+    "bindings": {
+      "space g c": "editor::ToggleComments"
+    }
+  }
+]
