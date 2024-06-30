@@ -12,6 +12,7 @@
 		"clock"
 	],
 	"modules-right": [
+    "idle_inhibitor",
 		"bluetooth",
 		"custom/divisor",
 		"network",
@@ -62,6 +63,14 @@
 		"format": "|",
 		"tooltip": false
 	},
+  
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": " ",
+        "deactivated": " "
+    }
+  },
 	"bluetooth": {
 		"format": "",
     "format-off": "󰂲",
