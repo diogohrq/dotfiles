@@ -1,0 +1,115 @@
+@define-color txt        #f2f4f8;
+@define-color txt-alt    #7f849c;
+@define-color bg   	     #121212;
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13.5px;
+  font-weight: 700;
+  margin: 0;
+}
+
+window#waybar {
+  background-color: transparent;
+  color: @txt;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+button {
+  box-shadow: inset 0 -3px transparent;
+  border: none;
+  border-radius: 0;
+}
+
+tooltip {
+  background-color: @bg;
+  border: none;
+}
+
+tooltip label {
+  color: @txt;
+}
+
+/* LEFT MODULES */
+#workspaces {
+  background-color: @bg;
+  border-radius: 5px;
+  padding: 0px 10px 0px 5px;
+  margin-right: 5px;
+}
+
+#workspaces button {
+  color: @txt;
+  border: none;
+  transition: all 250ms ease-in-out;
+  padding: 0px 5px;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background: inherit;
+  border: none;
+}
+
+#tray {
+  border-radius: 5px;
+  padding: 0px 8px;
+  background-color: @bg;
+}
+
+/* MIDDLE MODULES */
+#clock {
+  border-radius: 5px;
+  padding: 0px 12px;
+  background-color: @bg;
+}
+
+/* RIGHT MODULES */
+
+#custom-divisor {
+  font-size: 8px;
+  background-color: @bg;
+}
+
+#idle_inhibitor {
+  background-color: @bg;
+  padding: 0px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+#bluetooth {
+  padding: 0px 12px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: @bg;
+}
+
+#network {
+  padding: 0px 12px;
+  background-color: @bg;
+}
+
+#wireplumber {
+  padding: 0px 12px;
+  background-color: @bg;
+}
+
+#battery {
+  padding: 0px 12px;
+  background-color: @bg;
+  border-radius: 0px 5px 5px 0px;
+}
+
+#custom-power {
+  border-radius: 5px;
+  padding: 0px 12px;
+  margin-left: 5px;
+  background-color: @bg;
+}

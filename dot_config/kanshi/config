@@ -1,0 +1,8 @@
+profile external-only {
+  output eDP-1 disable
+  output HDMI-A-1 enable position 0,0
+}
+
+profile built-in-only {
+  output eDP-1 enable scale 1.2 position 0,0
+}

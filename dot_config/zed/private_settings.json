@@ -1,0 +1,31 @@
+{
+  "theme": "Monolith Dark",
+  "ui_font_size": 15,
+  "buffer_font_size": 14,
+  "vim_mode": true,
+  "relative_line_numbers": true,
+  "tab_size": 2,
+  "scrollbar": {
+    "show": "never"
+  },
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_weight": 300,
+  "ui_font_family": "JetBrains Mono",
+  "ui_font_weight": 400,
+  "current_line_highlight": "all",
+  "show_whitespaces": "selection",
+  "wrap_guides": [80, 120],
+  "features": {
+    "inline_completion_provider": "none",
+    "copilot": false
+  },
+  "assistant": {
+    "enabled": false,
+    "version": "1",
+    "button": false
+  },
+  "auto_install_extensions": {
+    "HTML": true,
+    "Monolith": true
+  }
+}

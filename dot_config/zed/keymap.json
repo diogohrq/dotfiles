@@ -1,0 +1,34 @@
+[
+  {
+    "context": "Editor && (vim_mode == normal)",
+    "bindings": {
+      "space w": "workspace::Save",
+      "space u": "editor::Undo",
+      "space f f": "file_finder::Toggle",
+      "space e": "workspace::ToggleLeftDock",
+      "ctrl-h": "pane::ActivatePrevItem",
+      "ctrl-l": "pane::ActivateNextItem",
+      "space c c": "pane::CloseActiveItem",
+      "ctrl-.": "workspace::ToggleBottomDock"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == visual || vim_mode == visual-line)",
+    "bindings": {
+      "space g c": "editor::ToggleComments"
+    }
+  },
+  {
+    "context": "Editor && (showing_code_action || showing_completions)",
+    "bindings": {
+      "tab": "editor::ContextMenuNext",
+      "ctrl-tab": "editor::ContextMenuPrev"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-.": "workspace::ToggleBottomDock"
+    }
+  }
+]
