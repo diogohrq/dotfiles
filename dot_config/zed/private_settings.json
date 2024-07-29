@@ -26,6 +26,6 @@
   },
   "auto_install_extensions": {
     "HTML": true,
-    "Monolith": true
+    "monolith": true
   }
 }
