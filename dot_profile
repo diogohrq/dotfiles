@@ -1,0 +1,7 @@
+export PATH="$HOME/.local/bin/:$PATH"
+export TERMINAL=kitty
+export BROWSER=firefox
+export FILEMANAGER="$TERMINAL -e lf"
+export MENU="rofi -show drun"
+export EDITOR=nvim
+export VISUAL=zeditor
