@@ -1,0 +1,9 @@
+[user]
+	name = diogohrq
+	email = diogohs110@gmail.com
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[pull]
+	rebase = false
