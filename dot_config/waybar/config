@@ -25,20 +25,15 @@
 
 	// MODULES LEFT
 	"hyprland/workspaces": {
-		"format": "{icon}",
+		"format": "{name}",
 		"disable_scroll": true,
 		"on-click": "activate",
 		"persistent-workspaces": {
 			"1": [],
 			"2": [],
       "3": [],
+      "4": [],
 		},
-    "format-icons": {
-      "default": "",
-      "active": "",
-      "urgent": ""
-
-    },
 		"sort-by-number": true
 	},
 	"tray": {

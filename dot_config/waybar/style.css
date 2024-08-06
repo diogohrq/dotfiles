@@ -1,5 +1,5 @@
 @define-color txt        #f2f4f8;
-@define-color txt-alt    #7f849c;
+@define-color txt-alt    #727169;
 @define-color bg   	     #121212;
 
 * {
@@ -39,15 +39,18 @@ tooltip label {
 #workspaces {
   background-color: @bg;
   border-radius: 5px;
-  padding: 0px 10px 0px 5px;
+  padding: 0px 0px 0px 10px;
   margin-right: 5px;
 }
 
 #workspaces button {
+  padding: 0px;
+  margin-right: 10px;
+  color: @txt-alt;
+}
+
+#workspaces button.active {
   color: @txt;
-  border: none;
-  transition: all 250ms ease-in-out;
-  padding: 0px 5px;
 }
 
 #workspaces button:hover {
@@ -73,8 +76,10 @@ tooltip label {
 /* RIGHT MODULES */
 
 #custom-divisor {
-  font-size: 8px;
+  font-size: 12px;
+  color: @txt-alt;
   background-color: @bg;
+  padding: 0px;
 }
 
 #idle_inhibitor {
