@@ -21,7 +21,7 @@
   },
   "assistant": {
     "enabled": false,
-    "version": "1",
+    "version": "2",
     "button": false
   },
   "auto_install_extensions": {
