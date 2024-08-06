@@ -5,7 +5,7 @@ chosen=$(printf "  Power Off\n  Reboot\n  Suspend\n  Hibernate\n 
 case "$chosen" in
 	"  Power Off") poweroff ;;
 	"  Reboot") reboot ;;
-	"  Suspend") systemctl suspend-then-hibernate ;;
+	"  Suspend") systemctl suspend ;;
 	"  Hibernate") systemctl hibernate ;;
 	"  Log Out") hyprctl dispatch exit ;;
 	"  Lock") hyprlock ;;
