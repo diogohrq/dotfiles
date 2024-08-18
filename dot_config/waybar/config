@@ -64,39 +64,77 @@
     "format-icons": {
         "activated": " ",
         "deactivated": " "
-    }
+    },
   },
 	"bluetooth": {
 		"format": "",
     "format-off": "󰂲",
-		"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "format-connected": "󰂱",
+		"tooltip-format": "{controller_alias}\t{controller_address}",
+		"tooltip-format-connected": "{controller_alias}\t\t{controller_address}\n\n{device_enumerate}",
 		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
 		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
 		"on-click": "rofi-bluetooth",
-    "on-click-right": "kitty bluetuith"
+    "on-click-right": "$TERMINAL -e bluetuith"
 	},
 	"network": {
-		"format-wifi": " ",
-		"format-ethernet": "󰈀",
-		"format-disconnected": "󰖪 ",
-		"tooltip-format-wifi": "{essid} ({signalStrength})% | {ipaddr}",
-		"tooltip-format-ethernet": "{ipaddr} | {cidr}",
-		"tooltip-format-disconnected": "󰖪 ",
+    "format-wifi" : "{icon}",
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    "format-ethernet": "󰈀",
+    "format-alt" : "󱛇",
+    "format-disconnected" : "󰖪",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)\t{ipaddr}",
+    "tooltip-format-ethernet": "{ifname}\t{ipaddr}",
+    "tooltip-format-disconnected": "Disconnected",
 		"on-click": "wifimenu.sh",
-    "on-click-right": "kitty nmtui"
+    "on-click-right": "$TERMINAL -e nmtui"
 	},
 	"wireplumber": {
 		"format": "{volume}% {icon}",
-		"format-mute": "{volume}% 󰝟",
+		"format-muted": "{volume}% 󰝟",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""],
+    },
 		"format-icons": ["", "", " "],
-		"on-click": ""
+    "on-click": "volume.sh mute",
+		"on-click-right": "pavucontrol"
 	},
 	"battery": {
 		"format": "{capacity}% {icon}",
-		"format-charging": "{capacity}% ",
-		"format-full": "{capacity}% ",
-		"format-icons": [" ", " ", " ", " ", " "],
+    "format-icons": {
+      "charging": [
+        "󰢟",
+        "󰢜",
+        "󰂆",
+        "󰂇",
+        "󰂈",
+        "󰢝",
+        "󰂉",
+        "󰢞",
+        "󰂊",
+        "󰂋",
+        "󰂅"
+      ],
+      "default": [
+        "󰂎",
+        "󰁺",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹",
+      ],
+    },
+    "interval": 5,
 		"on-click": ""
 	},
 	"custom/power": {

@@ -6,7 +6,8 @@
   font-family: "JetBrainsMono Nerd Font";
   font-size: 13.5px;
   font-weight: 500;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 window#waybar {
@@ -33,19 +34,20 @@ tooltip {
 
 tooltip label {
   color: @txt;
+  padding: 5px;
 }
 
 /* LEFT MODULES */
 #workspaces {
   background-color: @bg;
   border-radius: 5px;
-  padding: 0px 0px 0px 10px;
+  padding: 0px 3px 0px 10px;
   margin-right: 5px;
 }
 
 #workspaces button {
   padding: 0px;
-  margin-right: 10px;
+  margin-right: 7px;
   color: @txt-alt;
 }
 
@@ -91,30 +93,30 @@ tooltip label {
 }
 
 #bluetooth {
-  padding: 0px 12px;
+  padding: 0px 10px 0px 12px;
   border-radius: 5px 0px 0px 5px;
   background-color: @bg;
 }
 
 #network {
-  padding: 0px 12px;
+  padding: 0px 12px 0px 8px;
   background-color: @bg;
 }
 
 #wireplumber {
-  padding: 0px 12px;
+  padding: 0px 12px 0px 8px;
   background-color: @bg;
 }
 
 #battery {
-  padding: 0px 12px;
+  padding: 0px 12px 0px 8px;
   background-color: @bg;
   border-radius: 0px 5px 5px 0px;
 }
 
 #custom-power {
   border-radius: 5px;
-  padding: 0px 12px;
+  padding: 0px 11px 0px 10px;
   margin-left: 5px;
   background-color: @bg;
 }
