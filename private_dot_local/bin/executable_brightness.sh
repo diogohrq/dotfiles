@@ -1,15 +1,24 @@
-#!/bin/bash
+#!/bin/sh
 
-opt=$1
+function get_brightness {
+  brightnessctl info | tail -3 | head -1 | grep -Eo "[0-9]{2,3}" | tail -1
+}
 
-case $opt in
+function send_notification {
+  brightness=$(get_brightness) 
+  bar=$(seq -s "―" $(($brightness / 5)) | sed 's/[0-9]//g')
+
+  dunstify -i preferences-system-brightness-lock -r 817 -t 1000 -u normal "   $bar"
+}
+
+case $1 in
   up)
     brightnessctl set 5%+
+    send_notification
     ;;
   down)
     brightnessctl set 5%-
+    send_notification
     ;;
-  *)
-    echo -n "unknown option"
-    ;;
+  *) exit 1 ;;
 esac

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 chosen=$(printf "  Power Off\n  Reboot\n  Suspend\n  Hibernate\n  Log Out\n  Lock" | rofi -dmenu -i -theme-str '@import "power.rasi"')
 
