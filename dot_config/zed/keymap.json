@@ -1,5 +1,12 @@
 [
   {
+    "context": "Workspace",
+    "bindings": {
+      "space e": "workspace::ToggleLeftDock",
+      "ctrl-.": "workspace::ToggleBottomDock"
+    }
+  },
+  {
     "context": "Editor && (vim_mode == normal)",
     "bindings": {
       "space w": "workspace::Save",
