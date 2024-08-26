@@ -56,6 +56,11 @@ zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
 # Aliases
 alias ls="ls --color"
 alias ll="ls -la --color"
+alias gd="cd $HOME/Downloads"
+alias gD="cd $HOME/Documents"
+alias gc="cd $HOME/.config"
+alias gp="cd $HOME/projects"
+alias gs="cd $HOME/.local/bin"
 
 export TERMINAL=kitty
 export BROWSER=firefox
