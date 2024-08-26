@@ -1,3 +1,3 @@
 ```
-chezmoi init --apply --ssh diogohrq
+chezmoi init --apply diogohrq
 ```
