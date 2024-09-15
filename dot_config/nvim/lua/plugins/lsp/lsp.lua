@@ -48,11 +48,11 @@ return {
 			ensure_installed = {
 				"stylua",
 				"lua_ls",
-				"eslint_d",
 				"emmet_ls",
 				"cssls",
 				"prettier",
-				"tsserver",
+				"ts_ls",
+				"eslint",
 			},
 		})
 

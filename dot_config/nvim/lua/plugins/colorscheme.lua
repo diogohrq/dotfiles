@@ -1,17 +1,13 @@
 return {
-	"EdenEast/nightfox.nvim",
+	"rebelot/kanagawa.nvim",
 	lazy = false,
 	priority = 1000,
 	config = function()
-		require("nightfox").setup({
-			options = {
-				styles = {
-					comments = "italic",
-					keywords = "bold",
-					types = "italic,bold",
-				},
-			},
+		require("kanagawa").setup({
+			commentStyle = { italic = true },
+			keywordStyle = { bold = true },
+			typeStyle = { italic = true, bold = true },
 		})
-		vim.cmd.colorscheme("carbonfox")
+		vim.cmd.colorscheme("kanagawa")
 	end,
 }
