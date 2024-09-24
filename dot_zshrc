@@ -62,13 +62,13 @@ alias gc="cd $HOME/.config"
 alias gp="cd $HOME/projects"
 alias gs="cd $HOME/.local/bin"
 
-export TERMINAL=kitty
-export BROWSER=firefox
-export FILEMANAGER="$TERMINAL -e lf"
-export MENU="rofi -show drun"
-export EDITOR=nvim
-export VISUAL=zeditor
-export PATH="$HOME/.local/bin/:$PATH"
+# export TERMINAL=kitty
+# export BROWSER=zen-browser
+# export FILEMANAGER="$TERMINAL -e lf"
+# export MENU="rofi -show drun"
+# export EDITOR=nvim
+# export VISUAL=zeditor
+# export PATH="$HOME/.local/bin/:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
