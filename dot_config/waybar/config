@@ -13,6 +13,7 @@
 	],
 	"modules-right": [
     "idle_inhibitor",
+    "custom/divisor",
 		"bluetooth",
 		"custom/divisor",
 		"network",
