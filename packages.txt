@@ -2,6 +2,7 @@
 kitty
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
+inter-font
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -31,6 +32,8 @@ imagemagick
 tree
 tmux
 neovim
+luarocks
+lua51
 dunst
 libnotify
 vulkan-icd-loader 
@@ -48,6 +51,11 @@ gnome-themes-extra
 grim
 slurp
 ufw
+xorg-xhost
+btop
+xdg-desktop-portal-gtk
+gnome-keyring
+obsidian
 
 (AUR)
 bluetuith-bin
