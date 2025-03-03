@@ -1,13 +1,8 @@
 return {
-  "rebelot/kanagawa.nvim",
+  "folke/tokyonight.nvim",
   lazy = false,
   priority = 1000,
-  opts = {
-    commentStyle = { italic = true },
-    keywordStyle = { bold = true },
-    typeStyle = { italic = true, bold = true },
-  },
   config = function()
-    vim.cmd("colorscheme kanagawa")
+    vim.cmd("colorscheme tokyonight")
   end
 }

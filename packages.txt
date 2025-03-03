@@ -6,16 +6,10 @@ inter-font
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
-waybar
-pavucontrol
-rofi-wayland
 papirus-icon-theme
 bluez
 bluez-utils
 brightnessctl
-hypridle
-hyprlock
-hyprpaper
 wl-clipboard
 imv
 man-db
@@ -48,16 +42,11 @@ nvidia-settings
 ttf-liberation
 steam
 gnome-themes-extra
-grim
-slurp
 ufw
 xorg-xhost
 btop
-xdg-desktop-portal-gtk
-gnome-keyring
 obsidian
+tuned-ppd
 
 (AUR)
-bluetuith-bin
-rofi-calc-git
 tmux-plugin-manager
