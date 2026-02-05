@@ -1,0 +1,151 @@
+{
+  "layer": "top",
+  "height": 32,
+  "margin": "4",
+
+  "modules-left": [
+    "hyprland/workspaces",
+    "tray",
+  ],
+  "modules-center": [
+    "clock",
+  ],
+  "modules-right": [
+    "idle_inhibitor",
+    "custom/divider",
+    "bluetooth",
+    "custom/divider",
+    "network",
+    "custom/divider",
+    "wireplumber",
+    "custom/divider",
+    "battery",
+    "custom/power",
+  ],
+  
+  
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "disable_scroll": true,
+    "on-click": "activate",
+    "sort-by-number": true,
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+    },
+  },
+
+  "tray": {
+    "spacing": 4,
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "format": {
+        "months": "<span color='#DCD7BA'><b>{}</b></span>",
+        "weekdays": "<span color='#DCD7BA'><b>{}</b></span>",
+        "days": "<span color='#727169'><b>{}</b></span>",
+        "today": "<span color='#FFA066'><b>{}</b></span>"
+      },
+    },
+  },
+
+  "custom/divider": {
+		"format": "|",
+		"tooltip": false,
+  }, 
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": " ",
+        "deactivated": " "
+    },
+  },
+
+  "bluetooth": {
+		"format": "",
+    "format-off": "󰂲",
+    "format-connected": "󰂱",
+		"tooltip-format": "{controller_alias}\t{controller_address}",
+		"tooltip-format-connected": "{controller_alias}\t\t{controller_address}\n\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+		"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+		"on-click": "rofi-bluetooth",
+    "on-click-right": "kitty -e bluetuith"
+	},
+
+  "network": {
+    "format-wifi" : "{icon}",
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    "format-ethernet": "󰈀",
+    "format-alt" : "󱛇",
+    "format-disconnected" : "󰖪",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)\t{ipaddr}",
+    "tooltip-format-ethernet": "{ifname}\t{ipaddr}",
+    "tooltip-format-disconnected": "Disconnected",
+		"on-click": "wifimenu.sh",
+    "on-click-right": "kitty -e nmtui"
+	},  
+  
+  "wireplumber": {
+		"format": "{volume}% {icon}",
+		"format-muted": "{volume}% 󰝟",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""],
+    },
+		"format-icons": ["", "", " "],
+    "on-click": "volume.sh mute",
+		"on-click-right": "pavucontrol"
+	},
+  
+  "battery": {
+		"format": "{capacity}% {icon}",
+    "format-icons": {
+      "charging": [
+        "󰢟",
+        "󰢜",
+        "󰂆",
+        "󰂇",
+        "󰂈",
+        "󰢝",
+        "󰂉",
+        "󰢞",
+        "󰂊",
+        "󰂋",
+        "󰂅"
+      ],
+      "default": [
+        "󰂎",
+        "󰁺",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹",
+      ],
+    },
+    "interval": 5,
+		"on-click": ""
+	}, 
+
+  "custom/power": {
+		"format": "<span font='13'>󰐥</span>",
+		"on-click": "power-menu.sh",
+		"tooltip": false
+	}
+}
