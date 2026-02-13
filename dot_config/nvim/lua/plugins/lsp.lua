@@ -120,7 +120,6 @@ return {
     local servers = {
       -- clangd = {},
       -- gopls = {},
-      -- pyright = {},
       -- rust_analyzer = {},
       --
       -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -128,6 +127,7 @@ return {
       --
       -- But for many setups, the LSP (`ts_ls`) will work just fine
       ts_ls = {},
+      pyright = {},
     }
 
     -- Ensure the servers and tools above are installed
@@ -142,10 +142,12 @@ return {
       -- LSP
       'lua_ls',
       'ts_ls',
+      'pyright',
 
       -- Formatter
       'stylua',
       'eslint_d',
+      'ruff', -- also a linter
 
       -- Linters
       'prettierd',

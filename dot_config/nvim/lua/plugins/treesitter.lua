@@ -1,12 +1,14 @@
 return {
-  -- Highlight, edit, and navigate code
   'nvim-treesitter/nvim-treesitter',
   config = function()
     local filetypes = {
       'bash',
       'c',
-      'diff',
+      'python',
+      'javascript',
       'html',
+      'css',
+      'diff',
       'lua',
       'luadoc',
       'markdown',
@@ -16,6 +18,7 @@ return {
       'vimdoc',
       'latex',
       'yaml',
+      'regex',
     }
     require('nvim-treesitter').install(filetypes)
     vim.api.nvim_create_autocmd('FileType', {
