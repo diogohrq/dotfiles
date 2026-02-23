@@ -4,8 +4,11 @@ return {
   opts = {
     options = {
       icons_enabled = true,
+      section_separators = { left = '', right = '' },
+      -- section_separators = { left = '', right = '' },
+      -- component_separators = { left = '', right = '' },
       component_separators = { left = '|', right = '' },
-      section_separators = ' ',
+      -- section_separators = { left = '', right = '' },
       global_status = true,
       disabled_filetypes = {
         'help',
@@ -40,8 +43,8 @@ return {
         },
       },
       lualine_c = { 'branch', 'diff', 'diagnostics' },
-      lualine_x = { '' },
-      lualine_y = { 'searchcount' },
+      lualine_x = { 'searchcount' },
+      lualine_y = { 'selectioncount' },
       lualine_z = { 'progress' },
     },
   },

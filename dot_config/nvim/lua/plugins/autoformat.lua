@@ -31,6 +31,8 @@ return {
       lua = { 'stylua' },
       javascript = { 'prettierd' },
       python = { 'ruff' },
+      css = { 'prettierd' },
+      html = { 'prettierd' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --

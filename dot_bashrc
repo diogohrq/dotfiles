@@ -9,5 +9,7 @@ alias ls='ls --color=auto'
 alias ll='ls -la --color=auto'
 alias grep='grep --color=auto'
 alias nconf='cd ~/.config/nvim/ && nvim'
+alias gp='cd ~/Documents/repos/ && ll'
+
 PS1='[\u@\h \W]\$ '
 EDITOR='nvim'
