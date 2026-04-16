@@ -13,3 +13,8 @@ alias gp='cd ~/Documents/repos/ && ll'
 
 PS1='[\u@\h \W]\$ '
 EDITOR='nvim'
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+eval "$(rbenv init -)"
+

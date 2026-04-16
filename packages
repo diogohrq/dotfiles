@@ -33,6 +33,14 @@ bash-completion
 fzf
 bat
 zoxide
+podman
+podman-compose
+steam
+spotify-launcher
+less
+kdepim-addons
+kio-gdrive
+okular
 
 lib32-mesa
 vulkan-radeon

@@ -161,13 +161,22 @@ later(function() add({ 'https://github.com/rafamadriz/friendly-snippets' }) end)
 -- have full support of its highlight groups. Use if you don't like 'miniwinter'
 -- enabled in 'plugin/30_mini.lua' or other suggested 'mini.hues' based ones.
 Config.now(function()
---  -- Install only those that you need
   add({
     'https://github.com/rebelot/kanagawa.nvim',
---    'https://github.com/sainnhe/everforest',
---    'https://github.com/Shatur/neovim-ayu',
---    'https://github.com/ellisonleao/gruvbox.nvim',
   })
 
-  vim.cmd('color kanagawa-wave')
+  require('kanagawa').setup({
+    colors = {
+      theme = {
+        all = {
+          ui = {
+            bg_gutter = 'none'
+          },
+        },
+      },
+    },
+  })
+
+  -- Enable only one
+  vim.cmd('color kanagawa')
 end)

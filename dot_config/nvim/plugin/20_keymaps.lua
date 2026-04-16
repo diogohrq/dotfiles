@@ -189,6 +189,7 @@ nmap_leader('ld', '<Cmd>lua vim.diagnostic.open_float()<CR>',   'Diagnostic popu
 nmap_leader('lf', '<Cmd>lua require("conform").format()<CR>',   'Format')
 nmap_leader('li', '<Cmd>lua vim.lsp.buf.implementation()<CR>',  'Implementation')
 nmap_leader('lh', '<Cmd>lua vim.lsp.buf.hover()<CR>',           'Hover')
+nmap_leader('ll', '<Cmd>lua vim.lsp.codelens.run()<CR>',        'Lens')
 nmap_leader('lr', '<Cmd>lua vim.lsp.buf.rename()<CR>',          'Rename')
 nmap_leader('lR', '<Cmd>lua vim.lsp.buf.references()<CR>',      'References')
 nmap_leader('ls', '<Cmd>lua vim.lsp.buf.definition()<CR>',      'Source definition')
@@ -214,12 +215,13 @@ nmap_leader('oz', '<Cmd>lua MiniMisc.zoom()<CR>',          'Zoom toggle')
 -- s is for 'Session'. Common usage:
 -- - `<Leader>sn` - start new session
 -- - `<Leader>sr` - read previously started session
--- - `<Leader>sd` - delete previously started session
-local session_new = 'MiniSessions.write(vim.fn.input("Session name: "))'
+-- - `<Leader>sR` - restart Neovim preserving current session
+local session_new = 'vim.ui.input({ prompt = "Session name: " }, MiniSessions.write)'
 
 nmap_leader('sd', '<Cmd>lua MiniSessions.select("delete")<CR>', 'Delete')
 nmap_leader('sn', '<Cmd>lua ' .. session_new .. '<CR>',         'New')
 nmap_leader('sr', '<Cmd>lua MiniSessions.select("read")<CR>',   'Read')
+nmap_leader('sR', '<Cmd>lua MiniSessions.restart()<CR>',        'Restart')
 nmap_leader('sw', '<Cmd>lua MiniSessions.write()<CR>',          'Write current')
 
 -- t is for 'Terminal'
@@ -244,16 +246,4 @@ nmap_leader('vv', '<Cmd>lua MiniVisits.add_label("core")<CR>',    'Add "core" la
 nmap_leader('vV', '<Cmd>lua MiniVisits.remove_label("core")<CR>', 'Remove "core" label')
 nmap_leader('vl', '<Cmd>lua MiniVisits.add_label()<CR>',          'Add label')
 nmap_leader('vL', '<Cmd>lua MiniVisits.remove_label()<CR>',       'Remove label')
-
--- Move splits using <CTRL - hjkl
--- NOTE: Some terminals have colliding keymaps
-nmap('<C-S-h>', '<C-w>H', 'Move window to the left')
-nmap('<C-S-l>', '<C-w>L', 'Move window to the right')
-nmap('<C-S-j>', '<C-w>J', 'Move window to the bottom')
-nmap('<C-S-k>', '<C-w>K', 'Move window to the top')
-
--- Misc
-nmap_leader('w', '<Cmd>w<CR>',                                   'Save file')
-nmap('<Esc>', '<Cmd>nohlsearch<CR>',                             'Clear search highlight')
-
 -- stylua: ignore end
